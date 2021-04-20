@@ -32,7 +32,12 @@ body {
 
 .selected-row,
 .selected-column {
-    background-color: #4c5446;
+    background-color: #4c5446 !important;
+}
+
+
+.selected-row td {
+    background-color: #4c5446 !important;
 }
 
 .controls {
