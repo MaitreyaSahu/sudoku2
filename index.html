@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<HTML>
+
+<HEAD>
+    <TITLE>Sudoku
+    </TITLE>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</HEAD>
+
+<BODY>
+    <div class="main-container">
+        <div class="controls">
+            <input value="New" type="button" class="btn btn-new" onclick="startGame()" />
+            <!-- <input value="Hint" type="button" class="btn btn-primary" onclick="getHint()" /> -->
+            <input value="Solve" type="button" class="btn btn-solve" onclick="autoSolve()" />
+        </div>
+        <div class="container">
+            <table id="mainGrid" class="table table-bordered">
+                <tbody>
+                    <tr>
+                        <td id="x00"></td>
+                        <td id="x01"></td>
+                        <td id="x02"></td>
+                        <td id="x03"></td>
+                        <td id="x04"></td>
+                        <td id="x05"></td>
+                        <td id="x06"></td>
+                        <td id="x07"></td>
+                        <td id="x08"></td>
+                    </tr>
+                    <tr>
+                        <td id="x10"></td>
+                        <td id="x11"></td>
+                        <td id="x12"></td>
+                        <td id="x13"></td>
+                        <td id="x14"></td>
+                        <td id="x15"></td>
+                        <td id="x16"></td>
+                        <td id="x17"></td>
+                        <td id="x18"></td>
+                    </tr>
+                    <tr>
+                        <td id="x20"></td>
+                        <td id="x21"></td>
+                        <td id="x22"></td>
+                        <td id="x23"></td>
+                        <td id="x24"></td>
+                        <td id="x25"></td>
+                        <td id="x26"></td>
+                        <td id="x27"></td>
+                        <td id="x28"></td>
+                    </tr>
+                    <tr>
+                        <td id="x30"></td>
+                        <td id="x31"></td>
+                        <td id="x32"></td>
+                        <td id="x33"></td>
+                        <td id="x34"></td>
+                        <td id="x35"></td>
+                        <td id="x36"></td>
+                        <td id="x37"></td>
+                        <td id="x38"></td>
+                    </tr>
+                    <tr>
+                        <td id="x40"></td>
+                        <td id="x41"></td>
+                        <td id="x42"></td>
+                        <td id="x43"></td>
+                        <td id="x44"></td>
+                        <td id="x45"></td>
+                        <td id="x46"></td>
+                        <td id="x47"></td>
+                        <td id="x48"></td>
+                    </tr>
+                    <tr>
+                        <td id="x50"></td>
+                        <td id="x51"></td>
+                        <td id="x52"></td>
+                        <td id="x53"></td>
+                        <td id="x54"></td>
+                        <td id="x55"></td>
+                        <td id="x56"></td>
+                        <td id="x57"></td>
+                        <td id="x58"></td>
+                    </tr>
+                    <tr>
+                        <td id="x60"></td>
+                        <td id="x61"></td>
+                        <td id="x62"></td>
+                        <td id="x63"></td>
+                        <td id="x64"></td>
+                        <td id="x65"></td>
+                        <td id="x66"></td>
+                        <td id="x67"></td>
+                        <td id="x68"></td>
+                    </tr>
+                    <tr>
+                        <td id="x70"></td>
+                        <td id="x71"></td>
+                        <td id="x72"></td>
+                        <td id="x73"></td>
+                        <td id="x74"></td>
+                        <td id="x75"></td>
+                        <td id="x76"></td>
+                        <td id="x77"></td>
+                        <td id="x78"></td>
+                    </tr>
+                    <tr>
+                        <td id="x80"></td>
+                        <td id="x81"></td>
+                        <td id="x82"></td>
+                        <td id="x83"></td>
+                        <td id="x84"></td>
+                        <td id="x85"></td>
+                        <td id="x86"></td>
+                        <td id="x87"></td>
+                        <td id="x88"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="nums">
+            <table id="nums-table">
+                <tbody>
+                    <tr>
+                        <td>1
+                        </td>
+                        <td>2
+                        </td>
+                        <td>3
+                        </td>
+                        <td>4
+                        </td>
+                        <td>5
+                        </td>
+                        <td>6
+                        </td>
+                        <td>7
+                        </td>
+                        <td>8
+                        </td>
+                        <td>9
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</BODY>
+
+</HTML>
